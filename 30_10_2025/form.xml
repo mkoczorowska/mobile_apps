@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Tytuł formularza -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formularz rejestracyjny"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <!-- Imię -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Imię" />
+
+        <!-- Nazwisko -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Nazwisko" />
+
+        <!-- Email -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textEmailAddress"
+            android:hint="Adres e-mail" />
+
+        <!-- Hasło -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textPassword"
+            android:hint="Hasło" />
+
+        <!-- Numer telefonu -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="phone"
+            android:hint="Numer telefonu" />
+
+        <!-- Adres -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Adres zamieszkania" />
+
+        <!-- Kod pocztowy -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textPostalAddress"
+            android:hint="Kod pocztowy" />
+
+        <!-- Miasto -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Miasto" />
+
+        <!-- Data urodzenia -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Data urodzenia (RRRR-MM-DD)" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Data urodzenia (RRRR-MM-DD)" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Data urodzenia (RRRR-MM-DD)" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Data urodzenia (RRRR-MM-DD)" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Data urodzenia (RRRR-MM-DD)" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Data urodzenia (RRRR-MM-DD)" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Data urodzenia (RRRR-MM-DD)" />
+
+        <!-- Płeć -->
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Kobieta" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Mężczyzna" />
+        </RadioGroup>
+
+        <!-- Zgoda na regulamin -->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Akceptuję regulamin" />
+
+        <!-- Przycisk zatwierdzenia -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zatwierdź"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+</ScrollView>
