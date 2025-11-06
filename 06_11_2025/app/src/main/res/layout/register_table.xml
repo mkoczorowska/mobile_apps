@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:stretchColumns="1"
+    android:background="#FAFAFA">
+
+    <TableRow>
+        <TextView
+            android:text="Rejestracja"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_span="2"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Imię:" android:padding="8dp" />
+        <EditText
+            android:id="@+id/regNameTable"
+            android:hint="Imię i nazwisko"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Email:" android:padding="8dp" />
+        <EditText
+            android:id="@+id/regEmailTable"
+            android:hint="Adres e-mail"
+            android:inputType="textEmailAddress"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Hasło:" android:padding="8dp" />
+        <EditText
+            android:id="@+id/regPasswordTable"
+            android:hint="Hasło"
+            android:inputType="textPassword"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Powtórz hasło:" android:padding="8dp" />
+        <EditText
+            android:id="@+id/regConfirmTable"
+            android:hint="Powtórz hasło"
+            android:inputType="textPassword"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnRegisterTable"
+            android:text="Utwórz konto"
+            android:textAllCaps="false"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_span="2"
+            android:layout_gravity="center" />
+    </TableRow>
+</TableLayout>
