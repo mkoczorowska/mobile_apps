@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="buttonStyle">@style/ButtonStyle</item>
+        <item name="android:textViewStyle">@style/BodyText</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:padding">14dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+
+        <item name="android:background">@android:color/holo_blue_dark</item>
+        <item name="android:textColor">@android:color/white</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="HeaderText" parent="TextAppearance.AppCompat.Large">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="BodyText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+
+</resources>
