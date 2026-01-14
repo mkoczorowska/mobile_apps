@@ -48,7 +48,7 @@ public class Main {
 
             int[] wyniki = rzutKoscmi(liczbaKostek);
 
-            System.out.println("\nWyniki rzutu:");
+            System.out.println("\nWyniki rzutu: ");
             for (int i = 0; i < wyniki.length; i++) {
                 System.out.println("Kostka " + (i + 1) + ": " + wyniki[i]);
             }
