@@ -1,0 +1,15 @@
+<resources>
+<string name="app_name">09_02_2026</string>
+
+<string name="title">Zgłoś brak mundurka</string>
+<string name="saved">Zapisano uwagę</string>
+
+<string name="name">Imię</string>
+<string name="surname">Nazwisko</string>
+<string name="classs">Klasa</string>
+
+<string name="save">Zapisz uwagę</string>
+<string name="back">Dodaj nową uwagę</string>
+
+<string name="logo_desc">Logo ZSK</string>
+</resources>
