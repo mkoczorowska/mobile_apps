@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige">
+
+    <TextView
+        android:id="@+id/tytul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brown"
+        android:text="Gra w Kości. Autor: 000000mania"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/rzut"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/chocolate"
+        android:text="RZUĆ KOŚĆMI" />
+
+    <LinearLayout
+        android:id="@+id/layoutKosci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/kosc1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/question"/>
+
+        <ImageView
+            android:id="@+id/kosc2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/question"/>
+
+        <ImageView
+            android:id="@+id/kosc3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/question"/>
+
+        <ImageView
+            android:id="@+id/kosc4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/question"/>
+
+        <ImageView
+            android:id="@+id/kosc5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/question"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/suma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/beige"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16dp"
+        android:text="Wynik tego losowania: 0"/>
+
+    <TextView
+        android:id="@+id/wynik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/beige"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="16dp"
+        android:text="Wynik gry: 0"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/chocolate"
+        android:text="RESETUJ WYNIK" />
+
+</LinearLayout>
