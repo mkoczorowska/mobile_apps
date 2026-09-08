@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray">
+
+    <TextView
+        android:id="@+id/tytul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Papier, Kamień, Nożyce"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@color/dark_gray"
+        android:padding="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/game_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="50dp">
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/paper"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="paper"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/dark_gray"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/rock"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="rock"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/dark_gray"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/scissors"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="scissors"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/dark_gray"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/podzialka"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_marginHorizontal="35dp"/>
+
+        <ImageView
+            android:id="@+id/grafika"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/question"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wynik_rundy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/wynik_uzytkownik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TY: 0"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/wynik_komputer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KOMPUTER: 0"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="RESET GRY"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dark_gray"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_margin="5dp"/>
+</LinearLayout>
