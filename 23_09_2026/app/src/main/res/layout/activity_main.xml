@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/tytul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Właściwości czcionki"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:background="@color/green"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/rozmiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rozmiar:"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"/>
+
+    <SeekBar
+        android:id="@+id/suwak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:min="0"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/cytat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dzień Dobry"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/przycisk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=">>"
+        android:textSize="16sp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"/>
+
+
+</LinearLayout>
