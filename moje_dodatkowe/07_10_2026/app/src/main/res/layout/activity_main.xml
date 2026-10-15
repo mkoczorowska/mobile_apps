@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pizza u Skitka"
+        android:textSize="32sp"
+        android:background="#C9388C"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/rodzaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rodzaj pizzy:"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rozmiar:"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/rozmiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/liczba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liczba:"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"/>
+
+    <SeekBar
+        android:id="@+id/liczba_pocji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="1"
+        android:max="20"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Na grubym cieście"
+            android:textSize="24sp"/>
+
+        <Switch
+            android:id="@+id/czy_grube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj do zamówienia"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#C9388C"
+        android:textColor="@color/white"/>
+
+    <ListView
+        android:id="@+id/zamowienia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/zamow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Złóż zamówienie"
+        android:textSize="32sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#C9388C"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Potwierdź zamówienie"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:background="#C9388C"
+        android:textColor="@color/white"/>
+
+    <ListView
+        android:id="@+id/zamowienia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/zamow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Złóż zamówienie"
+        android:textSize="32sp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#C9388C"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/wroc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wróć"
+        android:textSize="32sp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#C9388C"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
