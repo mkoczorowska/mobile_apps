@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/cadetBlue">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Szyfrowanie"
+        android:textColor="@color/antiqueWhite"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Podaj wartość klucza"
+        android:textColor="@color/antiqueWhite"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/klucz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Podaj tekst"
+        android:textColor="@color/antiqueWhite"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/tekst"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:gravity="top"/>
+
+    <Button
+        android:id="@+id/szyfruj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightBlue"
+        android:text="Zaszyfruj"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tekst zaszyfrowany"
+        android:textColor="@color/antiqueWhite"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/szyfr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/aliceBlue"
+        android:layout_margin="10dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/pobierz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightBlue"
+        android:text="Zapisz szyfr w pliku"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"/>
+
+</LinearLayout>

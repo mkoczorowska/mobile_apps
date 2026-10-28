@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Akademia kodowania"
+        android:textSize="24sp"
+        android:background="@color/navy"
+        android:textColor="@color/white"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dane uczestnika"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/dane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:hint="Imię i nazwisko"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybierz kurs"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/kurs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poziom zaawansowania"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/poziom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/poczatkujacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Początkujący"/>
+        <RadioButton
+            android:id="@+id/sredniozaawansowany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Średniozaawansowany"/>
+        <RadioButton
+            android:id="@+id/zaawansowany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zaawansowany"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/certyfikat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Certyfikat (+40 zł)"
+
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/druk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Materiały drukowane (+25 zł)"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz się!"
+        android:textSize="16sp"
+        android:backgroundTint="@color/navy"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

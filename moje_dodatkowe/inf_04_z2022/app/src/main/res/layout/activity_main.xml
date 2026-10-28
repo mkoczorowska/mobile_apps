@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rejestruj konto"
+        android:textSize="32sp"
+        android:background="@color/teal"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e-mail"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Podaj hasło"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/haslo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powtórz hasło"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/haslo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/zatwierdz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Zatwierdź"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/teal"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/wynik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Autor: mania00000"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+</LinearLayout>
